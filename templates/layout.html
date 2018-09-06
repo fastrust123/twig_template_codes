@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <title>{% block title %}{% endblock %} - PresKriber</title>
+        <link rel="stylesheet" type="text/css" href="preskriber/css/custom.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="preskriber/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="preskriber/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="preskriber/js/owl/owl.carousel.min.js" ></script>
+    {% endblock %}
+    
+</head>
+<body>
+    <header class="header site-header pt-4 pb-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-auto col">
+                    <a href="">
+                        <img class="img-fluid logo" src="preskriber/images/logo.png">
+                    </a>
+                </div>
+                <div class="col text-center menu-col">
+                    <nav class="navbar navbar-expand-lg nav-custom navbar-dark wow fadeInUp">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                                <li class="nav-item desktop-hidden">
+                                    <a class="blue-btn-menu nav-link" href="#loginModal" role="button" data-toggle="modal">Login</a>
+                                </li>
+                                <li class="nav-item desktop-hidden">
+                                    <a href="#signupModal" role="button" data-toggle="modal" class="blue-btn-menu nav-link">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-auto col action-btn text-right">
+                    <div class="col-md-auto toggle-btn navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>                   
+                </div>
+                    <a class="btn blue-btn" href="#loginModal" role="button" data-toggle="modal">Login</a>
+                    <a href="#signupModal" role="button" data-toggle="modal" class="btn green-btn">Sign Up</a>
+                </div>
+                <!-- <div class="col-md-auto toggle-btn navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>                   
+                </div> -->
+            </div>
+        </div>
+    </header>
+    {% block leftsidebar %}{% endblock %}
+    
+    {% block content %}{% endblock %}
+
+    
+    <footer class="footer pt-3 pb-3 site-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="white m-0">&copy; 2018 PresKribe, powered by Fastrust Nigeria Limited. All rights reserved</p>
+                </div>
+                <div class="col text-right">
+                    <ul class="social">
+                        <li>
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% block footerhtml %}{% endblock %}
+</body>
+
+{% block jsscripts %}
+
+{% endblock %}
+
+</html>
